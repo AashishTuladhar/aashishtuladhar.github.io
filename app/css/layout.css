@@ -1,0 +1,165 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  body.boxed-content #navbar .content {
+    width: 90%;
+  }
+
+  body.boxed-content section > div:first-child {
+    width: 90%;
+    margin: auto;
+  }
+
+  #navbar {
+    height: 50px;
+    padding: 10px 0;
+  }
+
+  #navbar .menu a {
+    font-size: 0.85rem;
+  }
+
+  section#avatar .avatar-heading {
+    padding: 130px 10px 10px 10px;
+  }
+
+  section#avatar .avatar-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section#avatar .avatar-heading h3 {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  section#intro > .section-container {
+    padding: 15vh 0 22vh 0;
+  }
+
+  section#intro .intro-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  section#intro .intro-body h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body.boxed-content #navbar .content {
+    width: 70%;
+  }
+
+  body.boxed-content section > div:first-child {
+    width: 70%;
+    margin: auto;
+  }
+
+  #navbar {
+    height: 50px;
+    padding: 10px 0;
+  }
+
+  #navbar .menu a {
+    font-size: 0.85rem;
+  }
+
+  section#avatar .avatar-heading {
+    padding: 130px 10px 10px 10px;
+  }
+
+  section#avatar .avatar-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section#avatar .avatar-heading h3 {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  section#intro > .section-container {
+    padding: 15vh 5vh 22vh 5vh;
+  }
+
+  section#intro .intro-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  section#intro .intro-body {
+    width: 70%;
+  }
+
+  section#intro .intro-body h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #navbar {
+    height: 80px;
+    padding: 10px 0;
+  }
+
+  #navbar .menu a {
+    font-size: 1rem;
+  }
+
+  section#avatar .avatar-heading {
+    padding: 160px 10px 10px 10px;
+  }
+
+  section#avatar .avatar-heading h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section#avatar .avatar-heading h3 {
+    margin-bottom: 3.5rem;
+    font-weight: 300;
+  }
+
+  section#intro .intro-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  section#intro .intro-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-height: 767px) {
+  section#avatar > .section-container {
+    height: auto;
+  }
+
+  section#avatar .avatar-footer {
+    padding-top: 50px;
+  }
+}
+
+@media (min-height: 768px) {
+  section#avatar > .section-container {
+    height: 100%;
+  }
+}
+
+@media (min-height: 1000px) {
+  section#avatar > .section-container {
+    height: auto;
+  }
+
+  section#avatar .avatar-footer {
+    padding-top: 50px;
+  }
+}

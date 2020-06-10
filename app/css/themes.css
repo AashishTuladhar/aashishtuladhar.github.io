@@ -1,0 +1,22 @@
+body.main-theme > section:nth-child(even) {
+  background-color: #005555;
+}
+
+body.main-theme #intro {
+  color: white;
+}
+
+body.main-theme #content {
+  color: black;
+}
+
+body.main-theme #navbar .menu a:not(.borderless) {
+  border-color: #005555;
+  color: #005555;
+}
+
+body.main-theme #navbar .menu a:not(.borderless):hover {
+  background-color: #005555;
+  color: white;
+  transition: background-color 0.3s;
+}

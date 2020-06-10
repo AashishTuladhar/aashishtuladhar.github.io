@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("/app/fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/app/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("/app/fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Righteous-Regular";
+  src: url("/app/fonts/Righteous/Righteous-Regular.ttf");
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 5px;
+  border-left: 1px solid #e6ecf8;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: top 0.4s;
+}
+
+#navbar .content {
+  display: flex;
+  height: 100%;
+}
+
+#navbar .logo {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#navbar .menu {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+#navbar .menu a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#navbar .content img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.extraspace {
+  height: 100px;
+}
+
+section#avatar {
+  text-align: center;
+}
+
+section#avatar > .section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#avatar .avatar-heading h1 {
+  font-family: "Righteous-Regular";
+  font-weight: 300;
+}
+
+section#intro {
+  text-align: center;
+}
+
+section#intro > .section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#intro .intro-heading h1 {
+  font-family: "Righteous-Regular";
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+section#intro .intro-body h3 {
+  font-family: "OpenSans-Light";
+  font-weight: 500;
+}
+
+section#content {
+  margin-top: -15vh;
+  height: 100%;
+}
+
+section#content .box {
+  margin: auto;
+}
+
+/* ul {
+  margin-top: 0;
+  list-style-type: none;
+}
+
+li {
+  display: table;
+  height: 40px;
+}
+
+li div {
+  display: table-cell;
+  vertical-align: middle;
+} */
