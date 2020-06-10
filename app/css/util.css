@@ -14,25 +14,33 @@
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   color: #141c3a;
   display: block;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1000px) {
-  .columns {
+  .grid .columns {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .column {
+  .grid .columns .column {
     flex: 1;
+    border-right: 1px solid #e2e0e0;
+  }
+
+  .grid .columns .column:last-child {
+    border: none;
   }
 }
 
-.columns > .column {
-  border-right: 1px solid #e2e0e0;
-}
+@media (max-width: 999px) {
+  .grid .columns .column {
+    border-bottom: 1px solid #e2e0e0;
+  }
 
-.columns > .column:last-child {
-  border: none;
+  .grid .columns .column:last-child {
+    border: none;
+  }
 }
 
 .text-center {

@@ -113,36 +113,64 @@ section#avatar .avatar-heading h1 {
   font-weight: 300;
 }
 
-section#intro {
+section#intro,
+section#project {
   text-align: center;
 }
 
-section#intro > .section-container {
+section#intro > .section-container,
+section#project > .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section#intro .intro-heading h1 {
+section#intro .intro-heading h1,
+section#project .intro-heading h1 {
   font-family: "Righteous-Regular";
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
-section#intro .intro-body h3 {
+section#intro .intro-body h3,
+section#project .intro-body h3 {
   font-family: "OpenSans-Light";
   font-weight: 500;
 }
 
-section#content {
+section#job {
   margin-top: -15vh;
-  height: 100%;
+  height: auto;
 }
 
-section#content .box {
-  margin: auto;
+section#job .grid .column .content {
+  padding: 3.5rem;
 }
 
+section#job .box .grid i {
+  font-size: 50px;
+}
+
+section#job .box .grid .job-title {
+  font-family: "Righteous-Regular";
+  font-weight: 100;
+}
+
+section#job .box .grid .job-description {
+  font-size: 1.1rem;
+}
+
+section#job .box .grid .content > .job-title {
+  margin-top: 2rem;
+}
+
+section#job .box .grid .content > .job-description {
+  margin-top: 4rem;
+}
+
+section#job .box .grid .content > .tools {
+  line-height: 2;
+}
 /* ul {
   margin-top: 0;
   list-style-type: none;
