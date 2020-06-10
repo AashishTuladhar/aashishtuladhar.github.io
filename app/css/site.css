@@ -173,6 +173,10 @@ section#job .box .grid .content > .tools {
   line-height: 2;
 }
 
+section#repos .columns {
+  justify-content: center;
+}
+
 section#repos .column {
   padding: 0 10px;
 }
