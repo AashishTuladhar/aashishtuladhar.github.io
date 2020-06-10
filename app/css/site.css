@@ -179,6 +179,8 @@ section#repos .column {
 
 section#repos .box .box-body {
   padding: 10%;
+  text-align: center;
+  cursor: pointer;
 }
 /* ul {
   margin-top: 0;

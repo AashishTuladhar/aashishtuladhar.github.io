@@ -23,12 +23,16 @@ fetch("https://api.github.com/users/aashishtuladhar")
     fetch(data["repos_url"])
       .then((response) => response.json())
       .then(function (data) {
-        let reposOutlineClone = document
-          .getElementById("repos-outline")
-          .cloneNode(true);
-        reposOutlineClone.querySelector(".box-body").textContent =
-          data[0]["description"];
-        document.getElementById("repos").querySelector(".columns").innerHTML =
-          reposOutlineClone.innerHTML;
+        for (i = 0; i < data.length; i++) {
+          let reposOutlineClone = document
+            .getElementById("repos-outline")
+            .cloneNode(true);
+          reposOutlineClone.querySelector(".box-body").textContent =
+            data[i]["name"];
+          listOfRepos += reposOutlineClone.innerHTML;
+        }
+        document
+          .getElementById("repos")
+          .querySelector(".columns").innerHTML = listOfRepos;
       });
   });
