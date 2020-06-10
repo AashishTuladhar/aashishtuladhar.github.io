@@ -17,6 +17,21 @@
   margin-bottom: 20px;
 }
 
+.grid.no-column-border .column {
+  border: none !important;
+}
+
+@media (min-width: 800px) {
+  .grid .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid .columns.sm-grid-2 .column {
+    flex: 0 1 50%;
+  }
+}
+
 @media (min-width: 1000px) {
   .grid .columns {
     display: flex;
@@ -30,6 +45,10 @@
 
   .grid .columns .column:last-child {
     border: none;
+  }
+
+  .grid .columns.grid-3 .column {
+    flex: 0 1 33.33%;
   }
 }
 

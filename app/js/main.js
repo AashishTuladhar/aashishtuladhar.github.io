@@ -11,7 +11,24 @@ Array.prototype.slice
   .call(document.getElementById("navbar").getElementsByTagName("a"))
   .forEach(function (item, index) {
     item.addEventListener("click", function () {
-      var scrollTo = document.getElementById(item.getAttribute("goTo"));
+      let scrollTo = document.getElementById(item.getAttribute("goTo"));
       scrollTo.scrollIntoView();
     });
+  });
+
+fetch("https://api.github.com/users/aashishtuladhar")
+  .then((response) => response.json())
+  .then(function (data) {
+    let listOfRepos = "";
+    fetch(data["repos_url"])
+      .then((response) => response.json())
+      .then(function (data) {
+        let reposOutlineClone = document
+          .getElementById("repos-outline")
+          .cloneNode(true);
+        reposOutlineClone.querySelector(".box-body").textContent =
+          data[0]["description"];
+        document.getElementById("repos").querySelector(".columns").innerHTML =
+          reposOutlineClone.innerHTML;
+      });
   });

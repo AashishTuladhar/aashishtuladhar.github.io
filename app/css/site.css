@@ -138,7 +138,8 @@ section#project .intro-body h3 {
   font-weight: 500;
 }
 
-section#job {
+section#job,
+section#repos {
   margin-top: -15vh;
   height: auto;
 }
@@ -170,6 +171,14 @@ section#job .box .grid .content > .job-description {
 
 section#job .box .grid .content > .tools {
   line-height: 2;
+}
+
+section#repos .column {
+  padding: 0 10px;
+}
+
+section#repos .box .box-body {
+  padding: 10%;
 }
 /* ul {
   margin-top: 0;
