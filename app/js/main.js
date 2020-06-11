@@ -8,7 +8,7 @@ window.onscroll = function () {
 };
 
 Array.prototype.slice
-  .call(document.getElementById("navbar").getElementsByTagName("a"))
+  .call(document.getElementById("navbar").querySelectorAll(".goTo"))
   .forEach(function (item, index) {
     item.addEventListener("click", function () {
       let scrollTo = document.getElementById(item.getAttribute("goTo"));
