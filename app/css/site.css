@@ -124,19 +124,22 @@ section#avatar .avatar-heading h1 {
 }
 
 section#intro,
-section#project {
+section#project,
+section#contact {
   text-align: center;
 }
 
 section#intro > .section-container,
-section#project > .section-container {
+section#project > .section-container,
+section#contact > .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 section#intro .intro-heading h1,
-section#project .project-heading h1 {
+section#project .project-heading h1,
+section#contact .contact-heading h1 {
   font-family: "Righteous-Regular";
   font-weight: 300;
   margin-bottom: 1.5rem;
@@ -174,6 +177,10 @@ section#job .box .grid .content .job-description {
 
 section#job .box .grid .content > .tools {
   line-height: 2;
+}
+
+section#repos .section-container {
+  padding-bottom: 50px;
 }
 
 section#repos .columns {
@@ -238,6 +245,29 @@ section#repos .box .box-body .repos-info > div {
 section#repos .box .box-body .repos-info > div img {
   width: 24px;
   margin-right: 5px;
+}
+
+section#contact .section-container {
+  position: relative;
+}
+
+section#contact .social-icons > a {
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+section#contact .social-icons > a:hover {
+  border-color: white;
+  background-color: white;
+}
+
+section#contact .copyright {
+  font-family: "OpenSans-Light";
+  position: absolute;
+  bottom: 10;
 }
 
 /* ul {

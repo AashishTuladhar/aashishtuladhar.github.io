@@ -4,6 +4,14 @@
   padding: 10px;
 }
 
+.button.circle {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #a6a8aa;
+}
+
 .borderless {
   border: 0 !important;
 }

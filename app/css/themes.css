@@ -3,7 +3,8 @@ body.main-theme .container > section:nth-of-type(even) {
 }
 
 body.main-theme #intro,
-body.main-theme #project {
+body.main-theme #project,
+body.main-theme #contact {
   color: white;
 }
 
@@ -27,5 +28,9 @@ section#job .box .grid i {
 }
 
 .text-primary {
+  color: #005555;
+}
+
+section#contact .social-icons > a:hover {
   color: #005555;
 }
