@@ -24,12 +24,17 @@ fetch("https://api.github.com/users/aashishtuladhar")
       .then((response) => response.json())
       .then(function (data) {
         for (i = 0; i < data.length; i++) {
-          let reposOutlineClone = document
-            .getElementById("repos-outline")
-            .cloneNode(true);
-          reposOutlineClone.querySelector(".box-body").textContent =
-            data[i]["name"];
-          listOfRepos += reposOutlineClone.innerHTML;
+          if (data[i]["name"] != "aashishtuladhar.github.io") {
+            let reposOutlineClone = document
+              .getElementById("repos-outline")
+              .cloneNode(true);
+            reposOutlineClone.querySelector(
+              ".box-body .repos-title"
+            ).textContent = data[i]["name"];
+            reposOutlineClone.querySelector(".box-body p").textContent =
+              data[i]["description"];
+            listOfRepos += reposOutlineClone.innerHTML;
+          }
         }
         document
           .getElementById("repos")
