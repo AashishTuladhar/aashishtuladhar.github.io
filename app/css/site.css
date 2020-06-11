@@ -126,14 +126,14 @@ section#project > .section-container {
 }
 
 section#intro .intro-heading h1,
-section#project .intro-heading h1 {
+section#project .project-heading h1 {
   font-family: "Righteous-Regular";
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
 section#intro .intro-body h3,
-section#project .intro-body h3 {
+section#project .project-body h3 {
   font-family: "OpenSans-Light";
   font-weight: 500;
 }
@@ -152,20 +152,13 @@ section#job .box .grid i {
   font-size: 50px;
 }
 
-section#job .box .grid .job-title {
+section#job .box .grid .content .job-title {
   font-family: "Righteous-Regular";
   font-weight: 100;
-}
-
-section#job .box .grid .job-description {
-  font-size: 1.1rem;
-}
-
-section#job .box .grid .content > .job-title {
   margin-top: 2rem;
 }
 
-section#job .box .grid .content > .job-description {
+section#job .box .grid .content .job-description {
   margin-top: 4rem;
 }
 
@@ -182,10 +175,24 @@ section#repos .column {
 }
 
 section#repos .box .box-body {
-  padding: 10%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 35px;
   cursor: pointer;
+  text-align: center;
 }
+
+section#repos .box .box-body .repos-title {
+  font-family: "Righteous-Regular";
+  font-weight: 100;
+}
+
+section#repos .box .box-body .repos-description {
+  margin-top: 2rem;
+}
+
 /* ul {
   margin-top: 0;
   list-style-type: none;

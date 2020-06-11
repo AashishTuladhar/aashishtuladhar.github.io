@@ -1,4 +1,4 @@
-body.main-theme .container > section:nth-child(even) {
+body.main-theme .container > section:nth-of-type(even) {
   background-color: #005555;
 }
 
