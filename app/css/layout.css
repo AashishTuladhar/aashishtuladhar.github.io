@@ -47,17 +47,24 @@ h6 {
   }
 
   section#intro .intro-heading h1,
-  section#project .intro-heading h1 {
+  section#project .project-heading h1 {
     font-size: 1.5rem;
   }
 
   section#intro .intro-body h3,
-  section#project .intro-body h3 {
+  section#project .project-body h3 {
     font-size: 1rem;
   }
 
-  section#job .box .grid h3 {
+  section#job .box .grid .job-title {
     font-size: 1.3rem;
+  }
+
+  section#repos .box .box-body .repos-title {
+    font-size: 1.2rem;
+  }
+
+  section#repos .box .box-body .repos-description {
   }
 }
 
@@ -101,22 +108,26 @@ h6 {
   }
 
   section#intro .intro-heading h1,
-  section#project .intro-heading h1 {
+  section#project .project-heading h1 {
     font-size: 1.5rem;
   }
 
   section#intro .intro-body,
-  section#project .intro-body {
+  section#project .project-body {
     width: 70%;
   }
 
   section#intro .intro-body h3,
-  section#project .intro-body h3 {
+  section#project .project-body h3 {
     font-size: 1rem;
   }
 
-  section#job .box .grid h3 {
+  section#job .box .grid .job-title {
     font-size: 1.5rem;
+  }
+
+  section#repos .box .box-body .repos-title {
+    font-size: 1.2rem;
   }
 }
 
@@ -145,13 +156,17 @@ h6 {
   }
 
   section#intro .intro-heading h1,
-  section#project .intro-heading h1 {
+  section#project .project-heading h1 {
     font-size: 2.5rem;
   }
 
   section#intro .intro-body h3,
-  section#project .intro-body h3 {
+  section#project .project-body h3 {
     font-size: 1.2rem;
+  }
+
+  section#repos .box .box-body .repos-title {
+    font-size: 1.3rem;
   }
 }
 
