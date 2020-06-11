@@ -161,11 +161,18 @@
     <div id="repos-outline" hidden>
       <div class="column">
         <div class="box">
-          <div class="box-body">
+          <div class="box-body" onclick="goToRepositoryUrl(this)" onmouseover="repoMouseOver(this)" onmouseout="repoMouseOut(this)" repositoryUrl="">
             <h3 class="repos-title">Column 1</h3>
             <p class="repos-description">This is a description of the project. Yes, a dummy.</p>
             <div class="repos-info">
-
+              <div class="repos-issues" title="Issues">
+                <img src="app/images/icons/github-issues.png" /> 
+                <span>0</span>
+              </div>
+              <div class="repos-watchers" title="Watchers">
+                <img src="app/images/icons/github-watchers.png" /> 
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
