@@ -185,6 +185,23 @@ section#repos .box .box-body {
   text-align: center;
 }
 
+section#repos .box .box-body.hover::after {
+  content: "View Repository";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.95);
+  opacity: 0.9;
+  transition: opacity 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  box-sizing: content-box;
+  border-radius: 5px;
+}
+
 section#repos .box .box-body .repos-title {
   font-family: "Righteous-Regular";
   font-weight: 100;
@@ -195,9 +212,22 @@ section#repos .box .box-body .repos-description {
 }
 
 section#repos .box .box-body .repos-info {
+  display: flex;
   position: absolute;
   bottom: 5;
   right: 5;
+}
+
+section#repos .box .box-body .repos-info > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+section#repos .box .box-body .repos-info > div img {
+  width: 24px;
+  margin-right: 5px;
 }
 
 /* ul {
