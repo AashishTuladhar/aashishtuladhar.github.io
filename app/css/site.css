@@ -175,6 +175,7 @@ section#repos .column {
 }
 
 section#repos .box .box-body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +192,12 @@ section#repos .box .box-body .repos-title {
 
 section#repos .box .box-body .repos-description {
   margin-top: 2rem;
+}
+
+section#repos .box .box-body .repos-info {
+  position: absolute;
+  bottom: 5;
+  right: 5;
 }
 
 /* ul {

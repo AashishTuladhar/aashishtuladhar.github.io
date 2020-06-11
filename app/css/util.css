@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .grid .columns {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,9 @@
   .grid .columns .column:last-child {
     border: none;
   }
+}
 
+@media (min-width: 1200px) {
   .grid .columns.grid-3 .column {
     flex: 0 1 33.33%;
   }
