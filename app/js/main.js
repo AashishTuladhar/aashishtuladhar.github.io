@@ -48,6 +48,9 @@ fetch("https://api.github.com/users/aashishtuladhar")
         document
           .getElementById("repos")
           .querySelector(".columns").innerHTML = listOfRepos;
+        document.querySelector(".initial-loading-screen").style.display =
+          "none";
+        document.querySelector("body > .container").removeAttribute("hidden");
       });
   });
 

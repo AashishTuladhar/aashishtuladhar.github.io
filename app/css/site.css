@@ -30,15 +30,25 @@
   border-left: 1px solid #e6ecf8;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
+}
+
+.initial-loading-screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initial-loading-screen img {
+  width: 20%;
 }
 
 html {
