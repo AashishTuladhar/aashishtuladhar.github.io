@@ -34,7 +34,7 @@ fetch("https://api.github.com/users/aashishtuladhar")
             reposOutlineClone.querySelector(
               ".box-body .repos-title"
             ).textContent = data[i]["name"];
-            reposOutlineClone.querySelector(".box-body p").textContent =
+            reposOutlineClone.querySelector(".box-body .header p").textContent =
               data[i]["description"];
             reposOutlineClone.querySelector(".repos-issues span").textContent =
               data[i]["open_issues_count"];
