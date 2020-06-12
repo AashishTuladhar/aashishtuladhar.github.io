@@ -218,7 +218,7 @@ section#repos .box .box-body.hover::after {
   border: 1px solid rgba(0, 0, 0, 0.9);
   box-sizing: content-box;
   border-radius: 5px;
-  animation: hover-animation ease-in-out 0.2s;
+  animation: hover-animation ease-out 0.2s;
 }
 
 section#repos .box .box-body .repos-title {
@@ -235,6 +235,15 @@ section#repos .box .box-body .repos-info {
   position: absolute;
   bottom: 5;
   right: 5;
+  z-index: 2;
+}
+
+section#repos .box .box-body.hover .repos-info {
+  color: white;
+}
+
+section#repos .box .box-body.hover .repos-info img {
+  filter: invert(100%);
 }
 
 section#repos .box .box-body .repos-info > div {
