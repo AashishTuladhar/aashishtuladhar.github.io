@@ -213,11 +213,12 @@ section#repos .box .box-body.hover::after {
   align-items: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.95);
-  opacity: 0.9;
+  opacity: 1;
   transition: opacity 0.3s;
   border: 1px solid rgba(0, 0, 0, 0.9);
   box-sizing: content-box;
   border-radius: 5px;
+  animation: hover-animation ease-in-out 0.2s;
 }
 
 section#repos .box .box-body .repos-title {
@@ -285,3 +286,12 @@ li div {
   display: table-cell;
   vertical-align: middle;
 } */
+
+@keyframes hover-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
