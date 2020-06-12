@@ -39,8 +39,8 @@ fetch("https://api.github.com/users/aashishtuladhar")
             reposOutlineClone.querySelector(".repos-issues span").textContent =
               data[i]["open_issues_count"];
             reposOutlineClone.querySelector(
-              ".repos-watchers span"
-            ).textContent = data[i]["watchers"];
+              ".repos-stargazers span"
+            ).textContent = data[i]["stargazers_count"];
 
             listOfRepos += reposOutlineClone.innerHTML;
           }
